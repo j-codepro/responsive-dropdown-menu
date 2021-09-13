@@ -1,0 +1,49 @@
+/* MOBILE FIRST */
+
+:root {
+    --first-color: #5b65f5;
+    --first-color-light: #c4c7f5;
+    --dark-color: #0e1026;
+    --white-color: #fbfbfb;
+
+    --content-font: 'Open Sans', sans-serif;
+    --nav-name-font-size: 1.5rem;
+    --normal-font-size: 0.938rem;
+
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --nav-name-font-size: 1rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+/* BASE */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+#content {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--content-font);
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+/* NAV */
