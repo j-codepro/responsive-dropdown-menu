@@ -1,8 +1,8 @@
 /* MOBILE FIRST */
 
 :root {
-    --first-color: #5b65f5;
-    --first-color-light: #c4c7f5;
+    --first-color: #053c1f;
+    --first-color-light: #d2e3cc;
     --dark-color: #0e1026;
     --white-color: #fbfbfb;
 
@@ -139,4 +139,33 @@ a {
 /* ACTIVE LINK */
 .active {
     color: var(--white-color);
+}
+
+/* DROPDOWN */
+.dropdown-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-icon {
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.dropdown-menu {
+    margin: 1rem 0 0 1rem;
+    display: none;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-item {
+    margin: 1rem 0;
 }
