@@ -4,14 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Menu Dropdown</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- JS -->
     <script src="main.js" defer ></script>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <header class="header">
+            <a href="#" class="header-logo">Profile</a>
+            <div class="header-toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav-content bd-grid">
+                    <a href="#" class="nav-profile">
+                        <div class="nav-img">
+                            <img src="img/profile-pic.jpg" alt="profile picture">
+                        </div>
+
+                        <div>
+                            <span class="nav-name">Firstname</span>
+                            <span class="nav-name">Lasname</span>
+                        </div>
+                    </a>
+
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="" class="nav-link-active">Home</a></li>
+                            <li class="nav-item"><a href="" class="nav-link-active">About</a></li>
+                            <li class="nav-item"><a href="" class="nav-link-active">Skills</a></li>
+                            <li class="nav-item"><a href="" class="nav-link-active">Works</a></li>
+                            <li class="nav-item"><a href="" class="nav-link-active">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>
