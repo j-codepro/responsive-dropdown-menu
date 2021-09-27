@@ -1,7 +1,7 @@
 const automaticSlide = () => {
-    let counter = 0;
+    let counter = 1;
     setInterval(() => {
-        document.getElementById('radio').checked = true;
+        document.getElementById(`radio${counter}`).checked = true;
         counter += 1;
         if (counter > 4) {
             counter = 1;
